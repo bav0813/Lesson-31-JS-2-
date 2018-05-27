@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery #01</title>
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="test1"></div>
+<p>Test text</p>
+
+
+<script>
+    
+    setTimeout(function(){
+        $('p').html('suddenly new text appears here');
+    }, 3400);
+    
+    
+    setTimeout(function(){
+        $('p').html("...and updates");
+    }, 6000);
+
+    
+</script>
+</body>
+</html>
